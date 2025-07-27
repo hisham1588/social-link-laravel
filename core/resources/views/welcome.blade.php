@@ -20,7 +20,8 @@
         <form action="{{ route('add-item') }}" method="POST">
             @csrf
             <div class="justify-center flex my-4">
-                <input type="text" name="item" class="w-[300px] p-2 rounded-[5px] border border-gray-300">
+                <input type="file" name="image" class="w-[300px] p-2 rounded-[5px] border border-gray-300">
+                <input type="text" name="item" placeholder="enter item name" class="w-[300px] p-2 rounded-[5px] border border-gray-300">
                 <input type="submit" value="Add"
                     class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
             </div>
